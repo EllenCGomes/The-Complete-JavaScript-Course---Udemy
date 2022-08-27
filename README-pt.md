@@ -1,12 +1,12 @@
 <p align="right"><a href="README.md"><img src="img/us-flag.png" height="20" align="center">  For English, click here </a></p>
 
-Status: Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
+**Status:** Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
  
-Curso: The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
+**Curso:** The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
 
-Linguagem: JavaScript
+**Linguagem:** JavaScript
 
-Aprendizado:
+**Aprendizado:**
 - Planejar e arquitetar aplicativos usando fluxogramas e padrões JavaScript comuns;
 - Fundamentos: variáveis, if/else, operadores, lógica booleana, funções, arrays, objetos, loops, strings, desestruturação, operador spread, argumentos padrão, encadeamento opcional (ES2020), etc;
 - Como o JavaScript funciona nos bastidores: mecanismos, pilha de chamadas, elevação, escopo, uso do 'this', valores de referência etc;
@@ -19,13 +19,13 @@ Aprendizado:
 
  
 
-Assignments:
+**Exercícios Práticos:**
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
 
-Challenges:
+**Desafios:**
 
  
 
