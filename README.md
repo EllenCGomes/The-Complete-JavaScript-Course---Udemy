@@ -20,18 +20,8 @@ Status: In Progress<img src="img/loading.gif" height="70" align="middle"></img>
  
 
 **Assignments:** 
-- <a href="Part1/practiceExercises.js">Part 1:</a>
- 1. Values and Variables
- 2. Data Types
- 3. Let, Const and Var
- 4. Basic Operators
- 5. Strings and Template Strings
- 6. If/Else Statements
- 7. Type Conversion and Coercion
- 8. Equality Operators
- 9. Logical Operators
- 10. Switch Statement
- 11. Ternary Operator
+- <a href="Part1/practiceExercises.js">Part 1:</a> Values and Variables; Data Types; Let, Const and Var; Basic Operators; Strings and Template Strings;
+If/Else Statements; Type Conversion and Coercion; Equality Operators; Logical Operators; Switch Statement; Ternary Operator
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
