@@ -1,5 +1,7 @@
 Status: In Progress<img src="img/loading.gif" height="60" align="middle"></img>
-
+<p align="right">
+<a href="README-pt.md"><img src="images/br-flag.png" height="12"> Português</a>
+</p>
 &nbsp; 🇺🇸 &nbsp; 
 
 Course: The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
