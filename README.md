@@ -1,5 +1,5 @@
 <p align="right">
-<a href="README-pt.md"><img src="img/br-flag.png" height="12">Clique aqui para ler em Português</a>
+<a href="README-pt.md"><img src="img/br-flag.png" height="30"> Clique aqui para ler em Português</a>
 </p>
 
 Status: In Progress<img src="img/loading.gif" height="60" align="middle"></img>
