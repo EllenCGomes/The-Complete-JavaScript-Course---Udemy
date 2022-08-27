@@ -2,11 +2,11 @@
 
 Status: In Progress<img src="img/loading.gif" height="70" align="middle"></img>
 
-Course: The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
+**Course:** The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
 
-Built with: JavaScript
+**Built with:** JavaScript
 
-What's covered:
+**What's covered:**
 - Plan and architect applications using flowcharts and common JavaScript patterns;
 - Fundamentals: variables, if/else, operators, boolean logic, functions, arrays, objects, loops, strings, destructuring, spread operator, default arguments, optional chaining (ES2020), and more;
 - How JavaScript works behind the scenes: engines, the call stack, hoisting, scoping, the 'this' keyword, reference values, and more;
@@ -19,8 +19,19 @@ What's covered:
 
  
 
-Assignments: 
-- <a href="Part1/practiceExercises.js">Part 1</a>
+**Assignments:** 
+- <a href="Part1/practiceExercises.js">Part 1:</a>
+ 1. Values and Variables
+ 2. Data Types
+ 3. Let, Const and Var
+ 4. Basic Operators
+ 5. Strings and Template Strings
+ 6. If/Else Statements
+ 7. Type Conversion and Coercion
+ 8. Equality Operators
+ 9. Logical Operators
+ 10. Switch Statement
+ 11. Ternary Operator
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
