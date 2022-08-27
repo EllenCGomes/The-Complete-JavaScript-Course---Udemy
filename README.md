@@ -27,7 +27,6 @@ If/Else Statements; Type Conversion and Coercion; Equality Operators; Logical Op
  
 
 **Challenges:**
-
  
 
  
