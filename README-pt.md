@@ -20,7 +20,8 @@
  
 
 **Exercícios Práticos:**
-
+- <a href="Part1/practiceExercises.js">Parte 1:</a> Variáveis; Tipos de Dados; Let, Const e Var; Operadores Básicos; Strings e Template Strings;
+If/Else; Conversão and Coerção; Operadores de Igualdade; Operators Lógicos; Switch Statement; Operador Ternário.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
