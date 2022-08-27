@@ -1,6 +1,6 @@
-<p align="right"><a href="README.md">For English, click here. <img src="img/us-flag.png" height="20" align="center"></a></p>
+<p align="right"><a href="README.md">For English, click here <img src="img/us-flag.png" height="20" align="center"></a></p>
 
-Status: Em Progresso<img src="img/loading.gif" height="60" align="middle"></img>
+Status: Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
  
 Curso: The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
 
