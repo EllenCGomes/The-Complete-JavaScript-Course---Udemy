@@ -27,7 +27,7 @@ If/Else; Conversão and Coerção; Operadores de Igualdade; Operadores Lógicos;
  
 
 **<a href="all-coding-challenges.pdf">Desafios:</a>**
-- Part 1:
+- Parte 1:
   - <a href="Part1/codingChallenge1_2.js">Desafios 1 e 2;</a>
   - <a href="Part1/codingChallenge3.js">Desafio 3;</a>
   - <a href="Part1/codingChallenge4.js">Desafio 4;</a>
