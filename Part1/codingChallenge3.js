@@ -9,3 +9,19 @@ Test data:
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 */
 
+const averDolphins = ((97 + 112 + 101) / 3).toFixed(0);
+const averKoalas = ((109 + 95 + 100) / 3).toFixed(0);
+const minScore = 100;
+
+if (averDolphins >= minScore && averDolphins > averKoalas) {
+    console.log(`Dolphins won by ${averDolphins - averKoalas} points`);
+} else if (averDolphins >= minScore && averKoalas >= minScore && averDolphins === averKoalas) {
+    console.log(`It's a draw`);
+} else if (averKoalas >= minScore && averKoalas > averDolphins) {
+    console.log(`Koalas won by ${averKoalas - averDolphins} points`);
+} else {
+    console.log(`
+    Dolphins score: ${averDolphins}
+    Koala's score: ${averKoalas}
+    Result: No team won the trophy`);
+}
