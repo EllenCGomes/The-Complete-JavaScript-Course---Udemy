@@ -1,7 +1,9 @@
 <p align="right"><a href="README-pt.md"><img src="img/br-flag.png" height="20" align="center"> Clique aqui para ler em Português </a></p>
 
-**Status:** In Progress<img src="img/loading.gif" height="70" align="middle"></img>
+## Status 
+In Progress<img src="img/loading.gif" height="70" align="middle"></img>
 
+## About
 **Course:** The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
 
 **Built with:** JavaScript
@@ -19,14 +21,14 @@
 
  
 
-**Assignments:** 
+## Assignments 
 - <a href="Part1/practiceExercises.js">Part 1:</a> Values and Variables; Data Types; Let, Const and Var; Basic Operators; Strings and Template Strings;
 If/Else Statements; Type Conversion and Coercion; Equality Operators; Logical Operators; Switch Statement; Ternary Operator.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
 
-**<a href="all-coding-challenges.pdf">Challenges:</a>**
+## <a href="all-coding-challenges.pdf">Challenges</a>
 - Section 2:
   - <a href="Part1/codingChallenge1_2.js">Challenges 1 and 2;</a>
   - <a href="Part1/codingChallenge3.js">Challenge 3;</a>
