@@ -1,7 +1,9 @@
 <p align="right"><a href="README.md"><img src="img/us-flag.png" height="20" align="center">  For English, click here </a></p>
 
-**Status:** Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
- 
+## Status
+Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
+
+## Sobre
 **Curso:** The Complete JavaScript Course 2022: From Zero to Expert! https://www.udemy.com/course/the-complete-javascript-course/
 
 **Linguagem:** JavaScript
@@ -19,14 +21,14 @@
 
  
 
-**Exercícios Práticos:**
+## Exercícios Práticos
 - <a href="Part1/practiceExercises.js">Parte 1:</a> Variáveis; Tipos de Dados; Let, Const e Var; Operadores Básicos; Strings e Template Strings;
 If/Else; Conversão and Coerção; Operadores de Igualdade; Operadores Lógicos; Switch Statement; Operador Ternário.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
 
-**<a href="all-coding-challenges.pdf">Desafios:</a>**
+## <a href="all-coding-challenges.pdf">Desafios</a>
 - Parte 1:
   - <a href="Part1/codingChallenge1_2.js">Desafios 1 e 2;</a>
   - <a href="Part1/codingChallenge3.js">Desafio 3;</a>
