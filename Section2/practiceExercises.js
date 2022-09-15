@@ -178,14 +178,14 @@ is this happening?
 7. Finally, convert 'numNeighbors' to a number, and watch what happens now when you input 1
 8. Reflect on why we should use the === operator and type conversion in this situation */
 
-// const numNeighbors = prompt("How many neighbor countries does your country have?");
-// if (Number(numNeighbors) == 1) {
-//         console.log("Only 1 border!");
-// } else if (numNeighbors > 1) {
-//         console.log("More than 1 border");
-// } else {
-//         console.log("No borders");
-// }
+const numNeighbors = prompt("How many neighbor countries does your country have?");
+if (Number(numNeighbors) == 1) {
+        console.log("Only 1 border!");
+} else if (numNeighbors > 1) {
+        console.log("More than 1 border");
+} else {
+        console.log("No borders");
+}
 
 //LECTURE - LOGICAL OPERATORS
 
