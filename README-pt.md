@@ -22,18 +22,23 @@ Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
  
 
 ## Exercícios Práticos
-- <a href="Part1/practiceExercises.js">Parte 1:</a> Variáveis; Tipos de Dados; Let, Const e Var; Operadores Básicos; Strings e Template Strings;
+- <a href="Section2/practiceExercises.js">Fundamentos Parte 1:</a> Variáveis; Tipos de Dados; Let, Const e Var; Operadores Básicos; Strings e Template Strings;
 If/Else; Conversão and Coerção; Operadores de Igualdade; Operadores Lógicos; Switch Statement; Operador Ternário.
+- <a href="Section3/practiceExercises.js">Fundamentos Parte 2:</a> Modo Estrito; Funções Declaração vs. Expressão; Arrow Functions; Funções chamando funções; Arrays; Objetos e seus métodos; Loops.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
 
 ## <a href="all-coding-challenges.pdf">Desafios</a>
-- Parte 1:
-  - <a href="Part1/codingChallenge1_2.js">Desafios 1 e 2;</a>
-  - <a href="Part1/codingChallenge3.js">Desafio 3;</a>
-  - <a href="Part1/codingChallenge4.js">Desafio 4;</a>
-
+- Conteúdo 2:
+  - <a href="Section2/codingChallenge1_2.js">Desafios 1 e 2;</a>
+  - <a href="Section2/codingChallenge3.js">Desafio 3;</a>
+  - <a href="Section2/codingChallenge4.js">Desafio 4;</a>
+- Conteúdo 3:
+  - <a href="Section3/codingChallenge1.js">Desafio 1;</a>
+  - <a href="Section3/codingChallenge2.js">Desafio 2;</a>
+  - <a href="Section3/codingChallenge3.js">Desafio 3;</a>
+  - <a href="Section3/codingChallenge4.js">Desafio 4;</a>
  
 
  
