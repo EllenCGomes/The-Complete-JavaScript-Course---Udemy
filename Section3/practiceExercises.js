@@ -237,24 +237,84 @@ console.log(neighbors)
 //LECTURE - INTRODUCTION TO OBJECTS
 
 /* Notes:
--  */
+- has a key(properties)/value structure
+- easiest way to create is with object literal syntax, created with curly braces
+Ex:
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann",
+    age: 2037 - 1991,
+    job: "teacher",
+    friends: ["Michael", "Peter", "Steven"]
+};
+*/
 
 /*Practice Exercise:
 1. Create an object called 'myCountry' for a country of your choice, containing properties 'country', 'capital', 'language', 'population' and 'neighbors' (an array like we used in previous assignments. */
 
+const myCountry = {
+    country: "Brazil",
+    capital: "Brasilia",
+    language: "portuguese",
+    population: 212,
+    neighbors: ["Uruguay", "Argentina", "Paraguay", "Bolivia", "Peru", "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana"]
+}
+
 //LECTURE - DOT VS BRACKET NOTATION
 
 /* Notes:
--  */
+- to get the data you can use the dot or square brackets notation
+Ex: console.log(jonas.lasName); or console.log(jonas["lastName"]);
+The difference between the two is that with the square brackets you can create an expression.
+Ex 1: const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+
+Ex 2: const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job or friends");
+jonas[interestedIn] ? console.log(jonas[interestedIn]) : console.log("Wrong request")
+
+- assign new data:
+Ex: jonas.location = "Portugal";
+jonas["twitter"] = "@jonasschmedtman";*/
 
 /*Practice Exercise:
 1. Using the object from the previous assignment, log a string like this to the console: 'Finland has 6 million finnish-speaking people, 3 neighboring countries and a capital called Helsinki.'
 2. Increase the country's population by two million using dot notation, and then decrease it by two million using brackets notation. */
 
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`)
+
+myCountry.population = 214;
+myCountry["population"] = 212;
+
+console.log(myCountry);
+
 //LECTURE - OBJECT METHODS
 
 /* Notes:
--  */
+-  property that holds a function value
+Ex: const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann",
+    birthYear: 1991,
+    job: "teacher",
+    friends: ["Michael", "Peter", "Steven"]
+
+    calcAge: function () {
+        return 2037 - this.birthYear;
+    }
+
+    ALSO AN OPTION
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age
+    }
+};
+
+    console.log(jonas.calcAge());
+    console.log(jonas["calcAge"]());
+
+    ALSO AN OPTION
+    console.log(jonas.age);
+*/
 
 /*Practice Exercise:
 1. Add a method called 'describe' to the 'myCountry' object. This method will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
@@ -262,6 +322,28 @@ console.log(neighbors)
 3. Add a method called 'checkIsland' to the 'myCountry' object. This
 method will set a new property on the object, called 'isIsland'.
 'isIsland' will be true if there are no neighboring countries, and false if there are. Use the ternary operator to set the property. */
+
+const myCountry2 = {
+    country: "Brazil",
+    capital: "Brasilia",
+    language: "portuguese",
+    population: 212,
+    neighbors: ["Uruguay", "Argentina", "Paraguay", "Bolivia", "Peru", "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana"],
+
+    describe: function () {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbors.length} neighboring countries and a capital called ${this.capital}`);
+    },
+
+    checkIsland: function () {
+        this.isIsland = (this.neighbors.length === 0) ? true : false;
+
+        return this.isIsland;
+    }
+};
+
+myCountry2.describe();
+myCountry2.checkIsland();
+console.log(myCountry2);
 
 //LECTURE - FOR LOOP
 
