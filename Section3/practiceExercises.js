@@ -348,15 +348,53 @@ console.log(myCountry2);
 //LECTURE - FOR LOOP
 
 /* Notes:
--  */
+-  keeps running while the condition is true
+    for (let i = 1; i <= 10; i++) {
+        console.log(`Lifting weight repetition: ${i}` )
+    }
+*/
 
 /*Practice Exercise:
 1. There are elections in your country! In a small town, there are only 50 voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting'. */
 
+for (let i = 1; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`)
+}
+
 //LECTURE - LOOPING ARRAYS, BREAKING AND CONTINUING
 
 /* Notes:
--  */
+const jonas = [
+    "Jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"],
+];
+
+const types = [];
+
+for (let i = 0; i < jonas.length; i++) {
+
+    console.log(jonas[i], typeof jonas[i]);
+
+    types[i] = typeof jonas[i] OR types.push(typeof jonas[i]);
+}
+
+- continue -> exit de current iteration of the loop and continue to the next one;
+
+for (let i = 0; i < jonas.length; i++) {
+    if(typeof jonas[i] !== "string") continue; -> if this condition is true, it won't move to the next line and the loop will start again analyzing the next i 
+
+    console.log(jonas[i], typeof jonas[i]);
+
+- break -> terminate the whole loop
+for (let i = 0; i < jonas.length; i++) {
+    if(typeof jonas[i] === "number") break; -> if this condition is true, the whole loop will stop
+
+    console.log(jonas[i], typeof jonas[i]);
+
+*/
 
 /*Practice Exercise:
 1. Let's bring back the 'populations' array from a previous assignment.
@@ -364,10 +402,43 @@ console.log(myCountry2);
 3. Confirm that 'percentages2' contains exactly the same values as the
 'percentages' array that we created manually in the previous assignment, and reflect on how much better this solution is. */
 
+const populations2 = [212, 1441, 5, 84];
+const percentages2 = [];
+
+for (let i = 0; i < populations2.length; i++) {
+    let percentage2 = percentageOfWorld1(populations2[i]).toFixed(1);
+    percentages2.push(percentage2);
+}
+
+console.log(percentages2);
+
 //LECTURE - LOOPING BACKWARDS AND LOOPS IN LOOPS
 
 /* Notes:
--  */
+
+- Looping backwards:
+const jonas = [
+    "Jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"],
+];
+
+for (let i = jonas.length-1; i >= 0; i--) {
+    console.log(jonas[i]);
+}
+
+- Loops in loops:
+for (let i = 1; i < 4; i++) {
+    console.log(`Starting exercise ${i}`);
+
+    for (let j = 1; j < 6; j++) {
+        console.log(`Lifting weight repetition ${j}`);
+    }
+}
+
+*/
 
 /*Practice Exercise:
 1. Store this array of arrays into a variable called 'listOfNeighbors'
@@ -375,14 +446,57 @@ console.log(myCountry2);
 2. Log only the neighboring countries to the console, one by one, not the entire arrays. Log a string like 'Neighbor: Canada' for each country.
 3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't worry if it's too difficult for you! But you can still try to figure this out anyway. */
 
+const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for (let i = 0; i < listOfNeighbors.length; i++) {
+    for (let j = 0; j < listOfNeighbors[i].length; j++) {
+        console.log(`Neighbor: ${listOfNeighbors[i][j]}`);
+    }
+}
+
 //LECTURE - WHILE LOOP
 
 /* Notes:
--  */
+
+-  using a counter variable:
+
+    for (let j = 1; j < 6; j++) {
+        console.log(`Lifting weight repetition ${j}`);
+    }
+
+  ------------------------------------------------------
+
+    let i = 1;
+
+    while (i <= 10) {
+        console.log(`Lifting weight repetition ${i}`);
+        i++;
+    }
+
+- without counter variable:
+
+    let dice = Math.trunc(Math.random() * 6) + 1;
+
+    while (dice !== 6) {
+        console.log(`You rolled a ${dice}`);
+        dice = Math.trunc(Math.random() * 6) + 1;
+    }
+*/
 
 /*Practice Exercise: 
 1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing', but this time using a while loop (call the array 'percentages3').
 2. Reflect on what solution you like better for this task: the for loop or the while loop? */
 
+const populations3 = [212, 1441, 5, 84];
+const percentages3 = [];
+
+let i = 0;
+while (i < populations3.length) {
+    let percentage3 = percentageOfWorld1(populations3[i]).toFixed(1);
+    percentages3.push(percentage3);
+    i++;
+}
+
+console.log(percentages3);
 
 
