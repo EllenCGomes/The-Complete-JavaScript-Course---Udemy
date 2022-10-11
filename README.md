@@ -38,6 +38,15 @@ In Progress<img src="img/loading.gif" height="70" align="middle"></img>
   - <a href="Section3/codingChallenge2.js">Challenge 2;</a>
   - <a href="Section3/codingChallenge3.js">Challenge 3;</a>
   - <a href="Section3/codingChallenge4.js">Challenge 4;</a>
+- Section 5:
+  - <a href="Section5/codingChallenge1.js">Challenge 1;</a>
+- Section 7:
+  - <a href="Section7/codingChallenge1.js">Challenge 1;</a>
+- Section 9:
+  - <a href="Section9/codingChallenge1.js">Challenge 1;</a>
+  - <a href="Section9/codingChallenge2.js">Challenge 2;</a>
+  - <a href="Section9/codingChallenge3.js">Challenge 3;</a>
+  - <a href="Section9/codingChallenge4.js">Challenge 4;</a>
  
 
  
