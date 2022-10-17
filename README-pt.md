@@ -22,6 +22,9 @@ Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
 
 ## Projetos
 - <a href="Section7/Project_Guess_My_Number">Guess My Number:</a> Conceitos Praticados -> Variáveis; If/Else; Conversão; Operador Ternário; Funções; DOM (Query Selector e Get Element By Id); Biblioteca Math; HTML; CSS; Refatoração.
+
+![312014288_4457102631081623_1104585978979289236_n](https://user-images.githubusercontent.com/78104233/196226641-9208cd1b-cd4a-4366-bf0b-74e469849fc9.gif)
+
 - <a href="Section7/Project_Modal_Window">Modal Window:</a> Conceitos Praticados ->
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
