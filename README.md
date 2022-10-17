@@ -19,9 +19,15 @@ In Progress<img src="img/loading.gif" height="70" align="middle"></img>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
- 
 
-## Assignments 
+## Projects
+- <a href="Section7/Project_Guess_My_Number">Guess My Number:</a> Practiced Concepts -> Variables; If/Else Statements; Type Conversion; Ternary Operator; Functions; DOM (Query Selector and Get Element By Id); Math Library; HTML; CSS; Refactoring.
+- <a href="Section7/Project_Modal_Window">Modal Window:</a> Practiced Concepts ->
+
+------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+## Assignments and Notes
 - <a href="Section2/practiceExercises.js">Fundamentals Part 1:</a> Values and Variables; Data Types; Let, Const and Var; Basic Operators; Strings and Template Strings; If/Else Statements; Type Conversion and Coercion; Equality Operators; Logical Operators; Switch Statement; Ternary Operator.
 - <a href="Section3/practiceExercises.js">Fundamentals Part 2:</a> Strict Mode; Function Declarations vs. Expressions; Arrow Functions; Functions calling functions; Arrays; Objects and object methods; Loops.
 

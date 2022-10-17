@@ -19,9 +19,15 @@ Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
- 
 
-## Exercícios Práticos
+## Projetos
+- <a href="Section7/Project_Guess_My_Number">Guess My Number:</a> Conceitos Praticados -> Variáveis; If/Else; Conversão; Operador Ternário; Funções; DOM (Query Selector e Get Element By Id); Biblioteca Math; HTML; CSS; Refatoração.
+- <a href="Section7/Project_Modal_Window">Modal Window:</a> Conceitos Praticados ->
+
+------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+## Exercícios Práticos e Anotações 
 - <a href="Section2/practiceExercises.js">Fundamentos Parte 1:</a> Variáveis; Tipos de Dados; Let, Const e Var; Operadores Básicos; Strings e Template Strings;
 If/Else; Conversão and Coerção; Operadores de Igualdade; Operadores Lógicos; Switch Statement; Operador Ternário.
 - <a href="Section3/practiceExercises.js">Fundamentos Parte 2:</a> Modo Estrito; Funções Declaração vs. Expressão; Arrow Functions; Funções chamando funções; Arrays; Objetos e seus métodos; Loops.

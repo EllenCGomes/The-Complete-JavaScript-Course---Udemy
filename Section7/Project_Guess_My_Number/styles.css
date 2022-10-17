@@ -1,0 +1,149 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body,
+main,
+.left,
+.right,
+.my-number,
+.buttons {
+    display: flex;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("img/thumb-1920-708746.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-board {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+main {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: rgb(196, 110, 12);
+    font-weight: 300;
+}
+
+h2 {
+    margin-bottom: 3rem;
+}
+
+h2,
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.my-number {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0.4rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: whitesmoke;
+    font-size: 6rem;
+    /* font-family: 'Silkscreen', cursive; */
+    font-family: 'VT323', monospace;
+    color: rgb(196, 110, 12);
+    text-shadow: 2.1px 2.5px black;
+    border-radius: 3px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-top: 5px solid rgb(196, 110, 12);
+    border-left: 5px solid rgb(196, 110, 12);
+}
+
+.left,
+.right {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.right {
+    margin-left: 1rem;
+}
+
+.left {
+    margin-right: 1rem;
+}
+
+/* .left {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.right {
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.guess {
+    width: 50%;
+    height: 30%;
+    margin: 1rem 0 2rem 0;
+    border: none;
+    text-align: center;
+}
+
+.check,
+.new-game {
+    width: 85px;
+    height: 35px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 2px;
+    background: rgb(231, 153, 4);
+    background: linear-gradient(180deg, rgba(231, 153, 4, 1) 0%, rgba(228, 140, 10, 1) 27%, rgba(196, 110, 12, 1) 64%);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.check {
+    margin-right: 0.6rem;
+}
+
+.message,
+.label-score,
+.label-highscore,
+.score,
+.high-score {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+p {
+    width: 100%;
+}
