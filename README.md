@@ -22,6 +22,8 @@ In Progress<img src="img/loading.gif" height="70" align="middle"></img>
 
 ## Projects
 - <a href="Section7/Project_Guess_My_Number">Guess My Number:</a> Practiced Concepts -> Variables; If/Else Statements; Type Conversion; Ternary Operator; Functions; DOM (Query Selector and Get Element By Id); Math Library; HTML; CSS; Refactoring.
+![312014288_4457102631081623_1104585978979289236_n](https://user-images.githubusercontent.com/78104233/196226641-9208cd1b-cd4a-4366-bf0b-74e469849fc9.gif)
+
 - <a href="Section7/Project_Modal_Window">Modal Window:</a> Practiced Concepts ->
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
