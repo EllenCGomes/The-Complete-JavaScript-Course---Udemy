@@ -21,11 +21,13 @@ Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
 
 
 ## Projetos
-- <a href="Section7/Project_Guess_My_Number">Guess My Number:</a> Conceitos Praticados -> Variáveis; If/Else; Conversão; Operador Ternário; Funções; DOM (Query Selector e Get Element By Id); Biblioteca Math; HTML; CSS; Refatoração.
+- <a href="Section7/Project_Guess_My_Number">Guess My Number:</a> Conceitos Praticados -> Variáveis; If/Else; Conversão; Operador Ternário; Funções; DOM (querySelector, getElementById, eventListener); Biblioteca Math; HTML; CSS; Refatoração.
 
 ![312014288_4457102631081623_1104585978979289236_n](https://user-images.githubusercontent.com/78104233/196226641-9208cd1b-cd4a-4366-bf0b-74e469849fc9.gif)
 
-- <a href="Section7/Project_Modal_Window">Modal Window:</a> Conceitos Praticados ->
+- <a href="Section7/Project_Modal_Window">Modal Window:</a> Conceitos Praticados -> Variáveis; For Loop; Funções; DOM (querySelector/querySelectorAll, getElementById, eventListener, classList); HTML; CSS; Refatoração.
+
+![312087308_5839905076066932_1873476143754766649_n](https://user-images.githubusercontent.com/78104233/196314188-dc36c05e-3614-4f5f-bbeb-8e51a5c7261e.gif)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
