@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de846246dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pig Game</title>
+</head>
+
+<body>
+    <main>
+        <section class="left">
+            <div class="title">
+                <h1 id="player0"></h1>
+                <i id="dot0" class="dot fa-solid fa-circle"></i>
+            </div>
+            <h2 id="player0-score"></h2>
+            <div class="current">
+                <p>CURRENT</p>
+                <p id="current0" class="current-score"></p>
+            </div>
+        </section>
+
+        <section class="right">
+            <div class="title">
+                <h1 id="player1"></h1>
+                <i id="dot1" class="dot hidden fa-solid fa-circle"></i>
+            </div>
+            <h2 id="player1-score"></h2>
+            <div class="current">
+                <p>CURRENT</p>
+                <p id="current1" class="current-score"></p>
+            </div>
+        </section>
+    </main>
+    <section class="middle">
+        <button class="button new-game"><i class="fa-solid fa-circle-plus"></i>NEW GAME</button>
+        <img id="dice" class="hidden" src="img/dice-1.png" width="80">
+        <div class="down-buttons">
+            <button class="button roll-dice"><i class="fa-solid fa-rotate"></i>ROLL DICE</button>
+            <button class="button hold"><i class="fa-solid fa-hand"></i>HOLD</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
