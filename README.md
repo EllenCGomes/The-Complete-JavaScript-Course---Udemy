@@ -29,7 +29,7 @@ In Progress<img src="img/loading.gif" height="70" align="middle"></img>
 
 ![312087308_5839905076066932_1873476143754766649_n](https://user-images.githubusercontent.com/78104233/196314188-dc36c05e-3614-4f5f-bbeb-8e51a5c7261e.gif)
 
-- <a href="Section7/Project_Pig_Game">Pig Game:</a> Practiced Concepts -> Variables; If/Else Statements; Type Conversion; Ternary Operator; Functions; DOM (querySelector, getElementById, eventListener, classList); Math Library; HTML; CSS; Refactoring.
+- <a href="Section7/Project_Pig_Game">Pig Game:</a> Practiced Concepts -> Variables; If/Else Statements; For Loop; Type Conversion; Ternary Operator; Functions; DOM (querySelector, getElementById, eventListener, classList); Math Library; HTML; CSS; Refactoring.
 
 How to play -> the goal is to reach 20 points. On each turn a player repeatedly rolls a dice until either a 1 is rolled, and the player scores nothing, or the player holds and scores the sum of the rolls.
 
