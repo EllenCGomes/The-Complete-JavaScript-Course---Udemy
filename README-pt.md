@@ -29,6 +29,12 @@ Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
 
 ![312087308_5839905076066932_1873476143754766649_n](https://user-images.githubusercontent.com/78104233/196314188-dc36c05e-3614-4f5f-bbeb-8e51a5c7261e.gif)
 
+- <a href="Section7/Project_Pig_Game">Pig Game:</a> Conceitos Praticados -> Variáveis; If/Else; For Loop; Conversão; Operador Ternário; Funções; DOM (querySelector, getElementById, eventListener, classList); Biblioteca Math; HTML; CSS; Refatoração.
+
+Como jogar -> o objetivo do jogo é atingir 20 pontos. O jogador pode jogar o dado quantas vezes quiser até que o valor do dado seja igual a 1, onde ele perderá sua pontuação e sua vez de jogar, ou parar e ganhar a pontuação atingida até o momento. 
+
+![312828119_5848840111794695_6124203459322306916_n](https://user-images.githubusercontent.com/78104233/198095117-62f019fe-3b1a-41fd-90e2-5ba0f3364ef9.gif)
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 
