@@ -114,3 +114,83 @@ function calcAge(birthYear) {
 
 const firstName = "Jonas";
 calcAge(1991);
+
+/*
+# HOISTING
+
+-> Makes some types of variables accessible/usable in the code before they are actually declared.
+
+-> Makes it possible to use functions before actual declaration
+
+-> Before execution, the code is scanned for variable declarations (execution context's creation phase), and for each variable, a new property is created in the variable environment object. 
+
+    .function declarations -> IS HOISTED; has the actual function as INITIAL VALUE; block SCOPE
+
+    .var -> IS HOISTED; has undefined as INITIAL VALUE; function SCOPE
+
+    .let and const -> IS HOISTED in theory but the INITIAL VALUE is set to uninitialized so there is no value to work with. In practice is as if hosting was not happening at all. Those variables are placed in a Temporal Dead Zone (TDZ) and we can't access between the beginning of the scope and the place where the variable is declared. If you try to use the variable before is declared, an error will appear; block SCOPE
+
+        Ex:
+        const myName = "Jonas";
+        if(myName === "Jonas") {
+           TDZ --console.log("Jonas is a ${job}");
+           TDZ --const age = 2037 - 1989;
+           TDZ --console.log(age);
+            const job = "teacher";
+            console.log(x); -> Error: ReferenceError: x is not defined
+        } 
+        Error: ReferenceError: Cannot access 'job' before initialization -> shows that JS put the variable job in the TDZ with an uninitialized value.
+
+    .function expressions and arrows -> behave in the exact same way as variables so it will depend if the function is using var or let/const. Trying hoisting when assigning var to the function will not work since var has undefined as initial value so JS will not understand that the variable is actually a function expression or arrow.
+
+-> the TDZ makes it easier to avoid and catch errors. Accessing variables before declaration is bad practice. Also makes const variables actually work. Const should never be reassigned so it won't be possible to set to undefined first and reassign it later
+
+# THIS KEYWORD
+
+-> special variable that is created for every execution context (every function).It points to the "owner" of the function in which the this keyword is used. The this value is not static. It depends on how the function is called and its value is only assigned when the function is actually called.
+
+-> does not point to the function itself or the variable environment
+
+Ways a function can be called:
+- method (function attached to an object) - the this keyword inside the method points to the object that is calling the method
+Ex: const jonas = {
+    name: "Jonas",
+    year: 1989,
+    calcAge: function() {
+        return 2037 - this.year -> this = jonas
+    }
+};
+
+- simple normal function - this = undefined on strict mode, otherwise it will point to the global object (window object in the browser)
+
+- arrow functions - don't get their own this keyword so the this will point to the parent function (lexical this). 
+
+TIP: don't use arrow functions as a method
+
+- event listener - this keyword points to the DOM element that the handler is attached to.
+
+# PRIMITIVE vs OBJECTS (PRIMITIVE vs REFERENCE TYPES)
+
+-> primitive types are stored in the call stack, in the execution contexts in which they are declared.
+-> objects/reference types are stored in the heap.
+
+ */
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age); // result = 31
+console.log(oldAge); // result = 30
+
+const me = {
+    name: "Jonas",
+    age: 30,
+};
+const friend = me;
+friend.age = 27;
+console.log("Friend: ", friend); // result = 27
+console.log("Me: ", me); // result = 27
+
+/*
+ 
+*/
