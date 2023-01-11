@@ -171,26 +171,46 @@ TIP: don't use arrow functions as a method
 
 # PRIMITIVE vs OBJECTS (PRIMITIVE vs REFERENCE TYPES)
 
--> primitive types are stored in the call stack, in the execution contexts in which they are declared.
--> objects/reference types are stored in the heap.
-
+-> primitive types are stored in the call stack, in the execution contexts in which they are declared. First, js will create a unique identifier with the variable name. Then, a piece of memory will be allocated with a certain address and the value will be stored in memory at the specified address. The identifier will point to the address and not the value. The value of an address is immutable so when we reassign a value to a variable, it creates a new address with that value and the variable points to the new address.
+-> objects/reference types are stored in the heap, since its almost an unlimited memory pool and objects can be too big for the stack. When a new object is created, we also have a memory address and value, but in the heap instead. The object will not point directly to the memory address in the heap but to another memory address created in the call stack and this memory address will then point to the memory address in the heap by using the memory address as its value. 
+When you change an object property value, the value itself (whole object) remains the same and no new memory is created (because of that, you can reassign values to properties even when the variable is declared as const).
+ 
  */
 
+// Primitive Types
 let age = 30;
 let oldAge = age;
-age = 31;
+age = 31; //reassigned value - variable points to a new memory address
 console.log(age); // result = 31
-console.log(oldAge); // result = 30
+console.log(oldAge); // result = 30 -> oldAge remains pointing to the old memory address since it wasn't reassigned
 
+// Reference Types
 const me = {
     name: "Jonas",
     age: 30,
 };
 const friend = me;
 friend.age = 27;
-console.log("Friend: ", friend); // result = 27
+console.log("Friend: ", friend); // result = 27 -> it also shows 27 because a property reassignment doesn't not change the value for the address. The object remains the same one. 
 console.log("Me: ", me); // result = 27
 
-/*
- 
+/* Copying Objects that will have new property values
+
+-> Object.assign: only works on the first level - so if you have an object inside the object, the inner object will still be the same and point to the same place in memory - its a shallow copy
+
 */
+
+const me2 = {
+    name: "Jonas",
+    age: 30,
+    family: ["Alice", "Bob"],
+}
+const meCopy = Object.assign({}, me2); // a new object is created in the heap
+meCopy.age = 31;
+meCopy.family.push("Mary");
+meCopy.family.push("John");
+console.log("Me: ", me2); // age changed but family property (inner object) didn't due to the shallow copy
+console.log("Copy: ", meCopy); // age changed but family property (inner object) didn't due to the shallow copy
+
+
+
