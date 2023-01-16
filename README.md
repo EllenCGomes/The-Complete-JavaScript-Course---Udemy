@@ -41,6 +41,8 @@ How to play -> the goal is to reach 20 points. On each turn a player repeatedly 
 ## Assignments and Notes
 - <a href="Section2/practiceExercises.js">Fundamentals Part 1:</a> Values and Variables; Data Types; Let, Const and Var; Basic Operators; Strings and Template Strings; If/Else Statements; Type Conversion and Coercion; Equality Operators; Logical Operators; Switch Statement; Ternary Operator.
 - <a href="Section3/practiceExercises.js">Fundamentals Part 2:</a> Strict Mode; Function Declarations vs. Expressions; Arrow Functions; Functions calling functions; Arrays; Objects and object methods; Loops.
+- <a href="Section8/notes.js">How JavaScript works behind the scenes:</a> High-Level Overview; JS Engine and Runtime; Execution Context and The Call Stack; Scope and Scope Chain; Variable Environment (Hoisting and TDZ); "This" Keyword; Regular vs. Arrow Functions; Primitive vs. Reference Types.
+- <a href="Section9/notes.js">Data Structure, Modern Operators and Strings:</a> Destructuring Arrays and Objects; Spread Operator; Rest Pattern and Parameters; Short Circuiting (&& and ||); Nullish Coalescing Operator (??); Logical Assignment Operators; Looping Arrays: The For-of Loop; Enhanced Object Literals; Optional Chaining (?.); Looping Objects: Keys, Values and Entries; Sets; Maps; Strings.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  

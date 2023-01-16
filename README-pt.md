@@ -11,7 +11,7 @@ Em Progresso<img src="img/loading.gif" height="70" align="middle"></img>
 **Aprendizado:**
 - Planejar e arquitetar aplicativos usando fluxogramas e padrões JavaScript comuns;
 - Fundamentos: variáveis, if/else, operadores, lógica booleana, funções, arrays, objetos, loops, strings, desestruturação, operador spread, argumentos padrão, encadeamento opcional (ES2020), etc;
-- Como o JavaScript funciona nos bastidores: mecanismos, pilha de chamadas, elevação, escopo, uso do 'this', valores de referência etc;
+- Como o JavaScript funciona: mecanismos, pilha de chamadas, escopo, uso do 'this', valores de referência etc;
 - Funções: arrow functions, funções de primeira classe e de ordem superior, bind e closures;
 - Programação orientada a objetos: herança prototípica, funções construtoras (ES5), classes (ES6), encapsulamento, abstração, herança e polimorfismo;
 - JavaScript assíncrono: loop de eventos, promessas, async/await e tratamento de erros. Acesso a dados de APIs de terceiros com chamadas AJAX;
@@ -42,6 +42,8 @@ Como jogar -> o objetivo do jogo é atingir 20 pontos. O jogador pode jogar o da
 - <a href="Section2/practiceExercises.js">Fundamentos Parte 1:</a> Variáveis; Tipos de Dados; Let, Const e Var; Operadores Básicos; Strings e Template Strings;
 If/Else; Conversão and Coerção; Operadores de Igualdade; Operadores Lógicos; Switch Statement; Operador Ternário.
 - <a href="Section3/practiceExercises.js">Fundamentos Parte 2:</a> Modo Estrito; Funções Declaração vs. Expressão; Arrow Functions; Funções chamando funções; Arrays; Objetos e seus métodos; Loops.
+- <a href="Section8/notes.js">Como o JavaScript funciona:</a> Overview; Engine e Runtime; Contexto de Execução e Pilha de Chamadas; Escopo; Hoisting e TDZ; Uso do "This"; Funções Regulares vs. Arrow; Tipos Primitivos vs. Referência.
+ <a href="Section9/notes.js">Estrutura de Dados, Operadores e Strings:</a> Desestruturando Arrays e Objetos; Operador Spread; Parâmetros Rest; Operadores de Curto Circuito (&& and ||); Operador de Coalescência Nula (??); Operadores Lógicos; For-of Loop; Enhanced Object Literals; Operador de Encadeamento Opcional (?.); Loop de Objetos: Chaves, Valores e Entradas; Sets; Maps; Strings.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------- 
  
