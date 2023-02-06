@@ -71,7 +71,7 @@ const letters = [...str, " ", "S."];
 console.log(...str);
 
 const ingredients = [
-    // prompt("Let's make pasta! Please enter your indredients. \n Ingredient 1: "),
+    // prompt("Let's make pasta! Please enter your ingredients. \n Ingredient 1: "),
     // prompt("Ingredient 2: "),
     //prompt("Ingredient 3: ")
 ];
@@ -258,3 +258,259 @@ const rest2 = {
 rest1.numGuests ??= 10;
 rest2.numGuests ??= 10;
 console.log(rest1, rest2);
+
+/*
+# FOR-OF LOOP 
+-> does not use a counter or condition
+-> automatically loop through the entire array and in each iteration gives access to the current element
+-> still possible to use Continue and Break keywords
+-> to get the index you need to use the Entries method
+*/
+
+const numberedMenu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of numberedMenu) console.log(item);
+
+for (const [i, element] of numberedMenu.entries()) console.log(`${i + 1}: ${element}`);
+
+/*
+# ENHANCED OBJECT LITERALS
+
+-> changes in the way of writing objects literally by hand
+-> you can use an object outside of the object you are creating and use it as a property in the new one (ie. opening hours) by just writing the same name
+-> to write methods you no longer need to use : and the word function - it will be the name of the function and ()
+-> can use calculation on the property names (ie. weekdays)
+
+const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+const ***openingHours*** = {
+        [weekdays[3]]: {
+            open: 12,
+            close: 22,
+        },
+        [weekdays[4]]: {
+            open: 11,
+            close: 23,
+        },
+        [`day-${2 + 4}`]: {
+            open: 0, // Open 24 hours
+            close: 24,
+        },
+    };
+
+const restaurant = {
+    restaurantName: "Classico Italiano",
+    location: "Via Angelo Tavanti 23, Firenze, Italy",
+    categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+    starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+    mainMenu: ["Pizza", "Pasta", "Risotto"],
+    
+   ***openingHours*** - ES6 enhanced object literals
+
+    order: function (starterIndex, mainIndex) {
+        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+    },
+
+
+    - ES6 enhanced object literals for functions
+
+    orderDelivery({ starterIndex, mainIndex, time, address }) {
+        console.log(`Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
+    },
+
+    orderPasta(ingr1, ingr2, ingr3) {
+        console.log(`Here is your pasta with ${ingr1}, ${ingr2} and ${ingr3}`);
+    },
+
+    orderPizza(mainIngredient, ...otherIngredients) {
+        console.log(mainIngredient);
+        console.log(otherIngredients);
+    },
+};
+*/
+
+/*
+# OPTIONAL CHAINING OPERATOR(?.)
+-> if an object property does not exist, undefined is immediately returned to avoid errors
+-> test if the value on the left exists (NOT null or undefined)
+*/
+
+console.log(restaurant.openingHours.mon?.open);
+// if the property monday exists (NOT null or undefined), then read the next one "open", if not it will return undefined
+
+console.log(restaurant.openingHours?.mon?.open);
+// check both properties openingHours and mon
+
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+for (const day of days) {
+    console.log(day);
+    const open = restaurant.openingHours[day]?.open ?? "closed";
+    console.log(`on ${day}, we open at ${open}`);
+}
+
+// calling methods
+console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
+
+// arrays
+const users = [{ name: "Jonas", email: "hello@jonas.io" }];
+console.log(users[0]?.name ?? "User array empty");
+
+/*
+# LOOPING OBJECTS KEYS, VALUES AND ENTRIES
+
+*/
+
+
+// keys
+const properties = Object.keys(openingHours);
+console.log(`We are open ${properties.length} per week on: ${properties}`);
+
+// values
+const values = Object.values(openingHours);
+console.log(values);
+
+// entries - keys and values
+const entries = Object.entries(openingHours);
+console.log(entries);
+
+for (const [key, { open, close }] of entries) {
+    console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
+
+/*
+# SETS
+-> collection of unique values. Cannot have duplicates.
+-> to create a set we use new Set(array/string);
+-> it is iterable;
+-> it has no indexes so there is no way of accessing the element through them;
+-> if your goal is to store values in order and retrieve them, you should use an array;
+-> the order of elements is irrelevant;
+-> to check the length, use size method;
+-> to check if the set has a value, use has method;
+-> to add a value to the set, use add method. If you add more than one element with the same value, the set will still have just one element since it must be unique;
+-> to delete an element, use delete method;
+-> to delete all the elements in a set, use clear method;
+-> best use case for sets is to eliminate duplicates in arrays;
+*/
+
+const orderSet = new Set(["Pasta", "Pizza", "Pizza", "Risotto", "Pasta", "Pizza"]);
+console.log(orderSet); // only shows the unique values
+console.log(new Set("Jonas"));
+console.log(orderSet.size);
+console.log(new Set("jonasschmedtmann").size);
+console.log(orderSet.has("Pizza"));
+console.log(orderSet.add("Garlic Bread"));
+console.log(orderSet.add("Garlic Bread"));
+console.log(orderSet.delete("Risotto"));
+//console.log(orderSet.clear());
+
+for (const order of orderSet) console.log(order);
+
+// examples
+const staff = ["Waiter", "Chef", "Waitress", "Manager", "Waitress", "Chef", "Waiter"];
+
+const staffUnique = new Set(staff);
+console.log(staffUnique);
+
+// create a new array from the set
+const staffArray = [...new Set(staff)];
+console.log(staffArray);
+
+/*
+# MAP
+-> map values to keys;
+-> keys can be of any type;
+-> use new Map to create a new map;
+-> to add a key/value, use the set method. The set method can  be chained;
+-> to retrieve a value, use the method get, passing the key as parameter;
+-> to check if a key exists, use has method;
+-> to delete a key, use delete method;
+-> to check the length, use size method;
+-> to remove all elements, use clear method;
+*/
+
+const rest = new Map();
+rest.set("name", "Classico Italiano");
+rest.set(1, "Firenze, Italy");
+rest.set(2, "Lisbon, Portugal");
+
+rest
+    .set("categories", ["Italian", "Pizzeria", "Vegetarian", "Organic"])
+    .set("open", 11)
+    .set("close", 23)
+    .set(true, "We are open!")
+    .set(false, "We are closed");
+
+const time = 21;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+console.log(rest.has("categories"));
+console.log(rest.delete(2));
+//console.log(rest.clear());
+console.log(rest.size);
+
+// use objects as keys
+const ar = [1, 2];
+rest.set(ar, "Test");
+console.log(rest.get(ar));
+
+//rest.set(document.querySelector("h1"), "Heading");
+
+// another way of creating map
+const question = new Map([
+    ["question", "What is the best programming language?"],
+    [1, "C"],
+    [2, "Java"],
+    [3, "JavaScript"],
+    ["answer", 3],
+    [true, "Correct!"],
+    [false, "Try again"],
+]);
+
+// convert object to map - map has the same estructure as object entries
+const hoursMap = new Map(Object.entries(openingHours));
+
+// iteration
+console.log(question.get("question"));
+for (const [key, value] of question) {
+    if (typeof key === "number") console.log(`Answer ${key}: ${value}`);
+};
+
+//const answer = Number(prompt("Your answer"));
+const answer = 2;
+
+console.log(question.get(answer === question.get("answer")));
+
+// convert map to array
+console.log([...question]);
+console.log([...question.keys()]);
+console.log([...question.values()]);
+
+/*
+# WHICH DATA TO USE
+
+-> ARRAYS (simple list)
+when you need:
+    - ORDERED list of values (might contain duplicates);
+    - manipulate data;
+
+-> SETS (simple list)
+when you need:
+    - UNIQUE values;
+    - high performance;
+    - remove duplicates;
+
+-> OBJECTS (key/value pair)
+when you need:
+    - functions (methods);
+    - to work with JSON;
+    - write and access values with . and [] in a easy way;
+
+-> MAPS (key/value pair)
+when you need:
+    - better performance;
+    - keys with ANY data type;
+    - iterate or compute size in a easy way;
+    - to map key to values;
+    - keys that are not strings
+*/
