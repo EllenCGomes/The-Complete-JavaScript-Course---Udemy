@@ -514,3 +514,93 @@ when you need:
     - to map key to values;
     - keys that are not strings
 */
+
+const airline = "TAP Air Portugal";
+const plane = "A320";
+console.log(plane[0]);
+console.log("B737"[0]);
+console.log(airline.length);
+console.log("B737".length);
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.indexOf("Portugal")); // case sensitive and if the string is not in it, it returns -1
+console.log(airline.slice(4)); // 4 is the start index number. It returns a new string that can be stored in a variable
+console.log(airline.slice(4, 7)); // the last index number is not counted
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
+
+const checkMiddleSeat = function (seat) {
+    const s = seat.trim().slice(-1).toUpperCase();
+    console.log((s == "B" || s == "E") ? "middle seat" : "not middle seat");
+}
+
+checkMiddleSeat("11B")
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+
+// replacing
+const priceBR = "288,97R$";
+const priceUS = priceBR.replace("R$", "$").replace(",", ".");
+
+const announcement = "All passengers come to boarding door 23. Boarding door 23.'";
+console.log(announcement.replaceAll("door", "gate"));
+
+// booleans
+const planeNeo = "Airbus Air320neo";
+console.log(planeNeo.includes("320"));
+console.log(planeNeo.startsWith("Airb"));
+console.log(planeNeo.endsWith("neo"));
+
+// split
+console.log("Jonas Schmedtmann".split(" "));
+const [firstName, lastName] = "Jonas Schmedtmann".split(" ");
+console.log(firstName, lastName);
+
+// join
+const newName = ["Mr.", firstName, lastName].join(" ");
+console.log(newName);
+
+const capitalizeName = function (name) {
+    const names = name.split(" ");
+    const namesUpper = [];
+
+    for (const n of names) {
+        //namesUpper.push(n[0].toUpperCase() + n.slice(1));
+        namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+    }
+    console.log(namesUpper.join(" "));
+};
+
+capitalizeName("jessica ann smith davis");
+
+// padding
+const maskCreditCard = function (number) {
+    const str = number + "";
+    const last = str.slice(-4);
+
+    return last.padStart(str.length, "*");
+}
+
+console.log(maskCreditCard(4567890867432233));
+console.log(maskCreditCard("345768900976544323"));
+
+// repeat
+const msg = "Bad weather... All Departures Delayed..."
+console.log(msg.repeat(5));
+
+const planesInLine = function (n) {
+    console.log(`There are ${n} planes in line ${"✈ ".repeat(n)}`);
+}
+
+planesInLine(6);
+planesInLine(3);
+
+const flights =
+    "_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30";
+const getCode = str => str.slice(0, 3).toUpperCase();
+
+for (const flight of flights.split("+")) {
+    const [type, from, to, time] = flight.split(";");
+    const output = `${type.startsWith("_Delayed") ? "🔴" : ""} ${type.replaceAll("_", " ").trim()} from ${getCode(from)} to ${getCode(to)} (${time.replace(":", "h")})`.padStart(40);
+    console.log(output);
+}
